@@ -13,12 +13,11 @@ function randomChar(){
     return characters[randomNum]
 }
 passButton.addEventListener("click", function(){
-    console.log(randomNum.value)
-    console.log(randomNum)
+
     keyBox1.textContent = "               "
     keyBox2.textContent = "               "
     let i=0
-    while (i<=randomNum.value){
+    while (i<=numLength.value){
         i++;
         keyBox1.textContent += randomChar()
         keyBox2.textContent += randomChar()
